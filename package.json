@@ -7,15 +7,17 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "postinstall": "cd plugins/wysiwyg && npm i"
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.10.6",
-    "@strapi/plugin-users-permissions": "4.10.6",
+    "@strapi/plugin-graphql": "^4.11.1",
     "@strapi/plugin-i18n": "4.10.6",
-    "pg": "8.8.0",
+    "@strapi/plugin-users-permissions": "4.10.6",
     "@strapi/provider-upload-cloudinary": "^4.4.0",
+    "@strapi/strapi": "4.10.6",
+    "pg": "8.8.0",
     "strapi-plugin-populate-deep": "^1.0.1"
   },
   "author": {
